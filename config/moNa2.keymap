@@ -6,11 +6,6 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-};
-
 / {
     combos { compatible = "zmk,combos"; };
 
@@ -30,8 +25,8 @@
         default_layer {
             bindings = <
 &kp Q           &kp W         &kp E             &kp R             &kp T                                  &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D             &kp F             &kp G      &trans       &kp BACKSPACE  &kp H  &kp J  &kp K      &kp L    &kp ENTER
-&kp Z           &kp X         &kp C             &kp V             &kp B      &mkp RCLK    &kp ESC        &kp N  &kp M  &kp COMMA  &kp DOT  &mo 3
+&kp A           &kp S         &kp D             &kp F             &kp G      &trans       &none          &kp H  &kp J  &kp K      &kp L    &kp ENTER
+&kp Z           &kp X         &kp C             &kp V             &kp B      &none        &none          &kp N  &kp M  &kp COMMA  &kp DOT  &mo 3
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE  &mkp LCLK    &mo 1          &mo 2                             &kp RIGHT_SHIFT
             >;
 
@@ -42,7 +37,7 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &none         &none         &none         &none         &none         &none     &none   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
-&none         &none         &none         &none         &none         &none     &none   &none         &none         &none         &none         &none
+&none         &none         &none         &none         &none         &none     &none   &kp BACKSPACE &none         &none         &kp TAB       &kp ESC
 &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                                                  &trans
             >;
 
