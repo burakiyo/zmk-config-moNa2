@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: sayu-hub
       url-base: https://github.com/sayu-hub
+    - name: burakiyo
+      url-base: https://github.com/burakiyo
     - name: caksoylar  # <-- new entry
       url-base: https://github.com/caksoylar
   projects:
@@ -12,7 +14,7 @@ manifest:
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: sayu-hub
+      remote: burakiyo
       revision: main
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
