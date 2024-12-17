@@ -1,7 +1,9 @@
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
@@ -24,10 +26,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E             &kp R             &kp T                                  &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D             &kp F             &kp G      &trans       &none          &kp H  &kp J  &kp K      &kp L    &kp ENTER
-&kp Z           &kp X         &kp C             &kp V             &kp B      &none        &none          &kp N  &kp M  &kp COMMA  &kp DOT  &mo 3
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE  &mkp LCLK    &mo 1          &mo 2                             &kp RIGHT_SHIFT
+&kp Q           &kp W         &kp E             &kp R             &kp T                          &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D             &kp F             &kp G      &trans       &none  &kp H  &kp J  &kp K      &kp L    &kp ENTER
+&kp Z           &kp X         &kp C             &kp V             &kp B      &none        &none  &kp N  &kp M  &kp COMMA  &kp DOT  &mo 3
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE  &mkp LCLK    &mo 1  &mo 2                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -35,10 +37,10 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&none         &none         &none         &none         &none         &none     &none   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans
-&none         &none         &none         &none         &none         &none     &none   &kp BACKSPACE &none         &none         &kp TAB       &kp ESC
-&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                                                  &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&none         &none         &none         &none         &none         &none     &none   &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &trans
+&none         &none         &none         &none         &none         &none     &none   &kp BACKSPACE  &none         &none         &kp TAB       &kp ESC
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -66,7 +68,7 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&kp A   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
