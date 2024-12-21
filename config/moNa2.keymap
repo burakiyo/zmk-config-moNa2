@@ -32,7 +32,7 @@
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE  &mkp LCLK    &mo 1  &mo 2                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         layer_1 {
