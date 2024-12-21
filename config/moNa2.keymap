@@ -1,8 +1,6 @@
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
@@ -32,7 +30,7 @@
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &kp SPACE  &mkp LCLK    &mo 1  &mo 2                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
