@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/petejohanson
+      url-base: https://github.com/zmkfirmware
     - name: sayu-hub
       url-base: https://github.com/sayu-hub
     - name: burakiyo
@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: feat/pointers-move-scroll
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: sayu-hub
