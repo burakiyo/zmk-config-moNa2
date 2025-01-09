@@ -21,12 +21,12 @@
 
         pmw3610_cpi_up: pmw3610_cpi_up {
             compatible = "zmk,pmw3610-cpi-behavior";
-            increment = true; /* 押下で CPI を上げる */
+            increment = true;
         };
 
         pmw3610_cpi_down: pmw3610_cpi_down {
             compatible = "zmk,pmw3610-cpi-behavior";
-            increment = false; /* 押下で CPI を下げる */
+            increment = false;
         };
     };
 
