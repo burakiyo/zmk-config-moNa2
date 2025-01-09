@@ -21,13 +21,13 @@
 
         pmw3610_cpi_up: pmw3610_cpi_up {
             compatible = "zmk,pmw3610-cpi-behavior";
-            #sensor-binding-cells = <0>;
+            #behavior-binding-cells = <0>;
             increment = true;
         };
 
         pmw3610_cpi_down: pmw3610_cpi_down {
             compatible = "zmk,pmw3610-cpi-behavior";
-            #sensor-binding-cells = <0>;
+            #behavior-binding-cells = <0>;
             increment = false;
         };
     };
