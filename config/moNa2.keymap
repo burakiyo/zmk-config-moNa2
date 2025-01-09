@@ -18,6 +18,16 @@
 
             tap-ms = <20>;
         };
+
+        pmw3610_cpi_up: pmw3610_cpi_up {
+            compatible = "zmk,pmw3610-cpi-behavior";
+            increment = true; /* 押下で CPI を上げる */
+        };
+
+        pmw3610_cpi_down: pmw3610_cpi_down {
+            compatible = "zmk,pmw3610-cpi-behavior";
+            increment = false; /* 押下で CPI を下げる */
+        };
     };
 
     keymap {
@@ -58,10 +68,10 @@
 
         layer_3 {
             bindings = <
-&none        &none        &none        &none        &none                                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(F13)  &kp LG(F14)  &kp LG(F15)  &kp LG(F16)  &kp LG(F17)  &none     &bt BT_CLR      &none         &none         &none         &none         &none
-&kp LG(F18)  &kp LG(F19)  &none        &none        &none        &none     &bt BT_CLR_ALL  &none         &mkp LCLK     &none         &mkp RCLK     &none
-&trans       &trans       &trans       &trans       &trans       &trans    &trans          &trans                                                  &trans
+&none        &none        &none        &none        &none                                  &bt BT_SEL 0                &bt BT_SEL 1            &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LG(F13)  &kp LG(F14)  &kp LG(F15)  &kp LG(F16)  &kp LG(F17)  &none     &bt BT_CLR      &pmw3610_cpi_up 0 0         &pmw3610_cpi_down 0 0   &none         &none         &none
+&kp LG(F18)  &kp LG(F19)  &none        &none        &none        &none     &bt BT_CLR_ALL  &none                       &mkp LCLK               &none         &mkp RCLK     &none
+&trans       &trans       &trans       &trans       &trans       &trans    &trans          &trans                                                                          &trans
             >;
         };
 

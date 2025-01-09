@@ -50,6 +50,7 @@
     cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
+        label = "PMW3610";
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
