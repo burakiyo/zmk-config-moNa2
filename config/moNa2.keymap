@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
@@ -21,12 +20,12 @@
 
         pmw3610_cpi_up: pmw3610_cpi_up {
             compatible = "zmk,pmw3610-cpi-behavior";
-            increment = true;
+            increment = <true>;
         };
 
         pmw3610_cpi_down: pmw3610_cpi_down {
             compatible = "zmk,pmw3610-cpi-behavior";
-            increment = false;
+            increment = <false>;
         };
     };
 
