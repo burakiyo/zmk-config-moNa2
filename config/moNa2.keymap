@@ -58,7 +58,7 @@
         layer_3 {
             bindings = <
 &none        &none        &none        &none        &none                                  &bt BT_SEL 0            &bt BT_SEL 1        &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(F13)  &kp LG(F14)  &kp LG(F15)  &kp LG(F16)  &kp LG(F17)  &none     &bt BT_CLR      &none                   &none               &none         &none         &none
+&kp LG(F13)  &kp LG(F14)  &kp LG(F15)  &kp LG(F16)  &kp LG(F17)  &none     &bt BT_CLR      &bt BT_DISC 0           &bt BT_DISC 1       &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4
 &kp LG(F18)  &kp LG(F19)  &none        &none        &none        &none     &bt BT_CLR_ALL  &none                   &mkp LCLK           &none         &mkp RCLK     &none
 &trans       &trans       &trans       &trans       &trans       &trans    &trans          &trans                                                                  &trans
             >;
