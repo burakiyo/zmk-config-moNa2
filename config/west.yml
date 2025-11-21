@@ -6,7 +6,6 @@ manifest:
       url-base: https://github.com/sayu-hub
     - name: burakiyo
       url-base: https://github.com/burakiyo
-      branch: develop
     - name: caksoylar  # <-- new entry
       url-base: https://github.com/caksoylar
   projects:
