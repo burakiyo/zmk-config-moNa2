@@ -6,6 +6,7 @@ manifest:
       url-base: https://github.com/sayu-hub
     - name: burakiyo
       url-base: https://github.com/burakiyo
+      branch: develop
     - name: caksoylar  # <-- new entry
       url-base: https://github.com/caksoylar
   projects:
@@ -14,8 +15,8 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: sayu-hub
-      revision: main
+      remote: burakiyo
+      revision: develop
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
       revision: main
